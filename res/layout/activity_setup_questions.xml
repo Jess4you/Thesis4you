@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jess.thesisforyou.SetupQuestions">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security Questions"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGray"/>
+
+            <TextView
+                android:id="@+id/tvSetupTitle"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="Please specify and answer two security questions. This will later be used to reset your passwords."
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="First Security Question"/>
+            <EditText
+                android:id="@+id/etFirstQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ie: Whats your favorite food?"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="First Answer"/>
+            <EditText
+                android:id="@+id/etFirstAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ie: Taco"
+                android:textSize="15sp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="First Security Question"/>
+            <EditText
+                android:id="@+id/etSecondQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ie: Birthdate"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="First Answer"/>
+            <EditText
+                android:id="@+id/etSecondAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ie: 05/07/98"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_trans"
+        android:onClick="nextView"
+        android:text="Next"/>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jess.thesisforyou.ReportsMessages">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reports: Call Blocking"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorGray"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="List of calls blocked as of: "
+                android:textSize="15sp"/>
+
+            <Spinner
+                android:id="@+id/spnDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="List of calls blocked as of today"
+                android:textSize="15sp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/llBarHorizon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/bcBlockCalls"
+                        android:layout_width="wrap_content"
+                        android:minWidth="300dp"
+                        android:layout_height="300dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pcBlockCalls"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnHisto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Histogram"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/transparent"/>
+                <Button
+                    android:id="@+id/btnPie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pie"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:background="@color/transparent"/>
+            </LinearLayout>
+            <android.support.v7.widget.SearchView
+                android:id="@+id/svContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:hint="Search Contact Name"
+                android:completionThreshold="2"/>
+            <TextView
+                android:id="@+id/tvMostBlocked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Most blocked contact:"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

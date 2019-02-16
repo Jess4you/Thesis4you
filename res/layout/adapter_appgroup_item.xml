@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO: fix this bullshit layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="SampleText"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <Switch
+        android:id="@+id/swLock"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+</LinearLayout>

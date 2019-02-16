@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Enable Night Mode"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/nightswitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Night Mode"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="-10dp"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/changeLock">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="19dp"
+                        android:text="Change Lock Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"
+                        android:text="Change the application lock type." />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="-10dp"
+                android:clickable="true"
+                android:id="@+id/changeSecurityQuestion"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="bold"
+                        android:paddingLeft="5dp"
+                        android:textSize="19dp"
+                        android:text="Change Security Questions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Change security questions for password reset."
+                        android:layout_margin="8dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="-10dp"
+                android:layout_height="wrap_content"
+                android:onClick="openBlockedInbox"
+                android:clickable="true"
+                android:id="@+id/blockedInbox"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+                        android:paddingLeft="5dp"
+                        android:text="Blocked SMS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recently blocked messages"
+                        android:textSize="15dp"
+                        android:layout_margin="8dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="-10dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/faqs"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="19dp"
+                        android:paddingLeft="5dp"
+                        android:text="Help Section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ's, software version, and more about Mobile Guard."
+                        android:textSize="15dp"
+                        android:layout_margin="8dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

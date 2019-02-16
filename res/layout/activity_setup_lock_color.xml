@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetupLockColor"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvLockTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Set up Color Lock"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvLockHint"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="20dp"
+                android:text="Enter Pattern Code" />
+
+            <EditText
+                android:id="@+id/etColor"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="15dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/forgotPass"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="15dp"
+                android:text="Forgot Password?"
+                android:clickable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:baselineAligned="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btnRed"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"/>
+                    <Button
+                        android:id="@+id/btnGreen"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btnBlue"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginEnd="5dp"/>
+                    <Button
+                        android:id="@+id/btnYellow"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btnClear"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="⌫"
+                        android:textAllCaps="false"
+                        android:textSize="30sp"/>
+                    <Button
+                        android:id="@+id/btnDone"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Done"
+                        android:textAllCaps="false"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
